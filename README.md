@@ -33,4 +33,4 @@ Like all the other grid systems simply add <code>.column</code> as the basic cla
 
 
 ## variables.scss
-In the variables.scss you can overwrite all the necessary stuff. The breakpoints map defines your breakpoints. the container map is for the wrapping page container and the spacings map is for the padding of the columns and margins of the rows.
+In the variables.scss you can overwrite all the necessary stuff. The <b>breakpoints map</b> defines your breakpoints. the <b>container map</b> is for the wrapping page container and the <b>spacings map</b> is for the padding of the columns and margins of the rows.
