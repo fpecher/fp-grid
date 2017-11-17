@@ -4,9 +4,16 @@ This is a simple grid system based ob BEM.
 ## .container
 Simply add <code>.container</code> to your site to wrap everything. If you want to have a fullwidth container use <code>.container--fullwidth</code>.
 
+## .row
+The usage of the <code>.row</code> is pretty simple. Just add it before using the <code>.column</code>. Otherwise the grid won't work correctly. You can extend the <code>.row</code> with <code>.row--flex</code>, so the inner columns have the equal height.
+
+| supported class names |
+| :------------- |
+| row   |
+| row--flex   |
+
 ## .column
 Like all the other grid systems simply add <code>.column</code> as the basic class name and then you can extend this class with the class you need. The schema is like: <code>.column--WIDTH</code>.
-
 
 | supported class names |
 | :------------- |
