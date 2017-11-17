@@ -1,21 +1,15 @@
-// mixin
 @import '../setup/_breakpoint';
+@import '../setup/variables';
 
 .column {
   min-height: 1px; // prevents layout even when column is empty
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding: {
+    left: map-get($spacings, spacing-xs);
+    right: map-get($spacings, spacing-xs);
+  };
   float: left;
   box-sizing: border-box;
 
-  &--reverse {
-    float: right;
-
-    &-xs { @include breakpoint('xs') { float: right; } }
-    &-s { @include breakpoint('s') { float: right; } }
-    &-m { @include breakpoint('m') { float: right; } }
-    &-l { @include breakpoint('l') { float: right; } }
-  }
 
   &--auto { width: auto; }
   &--1    { width: 8.333333%; }
@@ -48,8 +42,10 @@
   }
 
   @include breakpoint('s') {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: {
+      left: map-get($spacings, spacing-s);
+      right: map-get($spacings, spacing-s);
+    };
 
     &--s-auto  { width: auto; }
     &--s-1     { width: 8.333333%; }
@@ -67,6 +63,11 @@
   }
 
   @include breakpoint('m') {
+    padding: {
+      left: map-get($spacings, spacing-m);
+      right: map-get($spacings, spacing-m);
+    };
+
     &--m-auto { width: auto; }
     &--m-1    { width: 8.333333%; }
     &--m-2    { width: 16.666667%; }
@@ -83,8 +84,10 @@
   }
 
   @include breakpoint('l') {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: {
+      left: map-get($spacings, spacing-l);
+      right: map-get($spacings, spacing-l);
+    };
 
     &--l-auto { width: auto; }
     &--l-1    { width: 8.333333%; }
@@ -99,11 +102,6 @@
     &--l-10   { width: 83.333333%; }
     &--l-11   { width: 91.666667%; }
     &--l-12   { width: 100%; }
-  }
-
-  &--flex-centered {
-    display: flex;
-    align-items: center;
   }
 
   &--zero {
@@ -144,10 +142,5 @@
         padding-right: 0;
       }
     }
-  }
-
-  &--small {
-    padding-left: 0.1875rem;
-    padding-right: 0.1875rem;
   }
 }

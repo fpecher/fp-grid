@@ -1,10 +1,12 @@
 // mixin
 @import '../setup/_breakpoint';
+@import '../setup/variables';
 
 .row {
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
-
+  margin: {
+    left: - map-get($spacings, spacing-xs);
+    right: - map-get($spacings, spacing-xs);
+  }
   &::after {
     content: '';
     display: block;
@@ -12,18 +14,24 @@
   }
 
   @include breakpoint('s') {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin: {
+      left: - map-get($spacings, spacing-s);
+      right: - map-get($spacings, spacing-s);
+    }
+  }
+
+  @include breakpoint('m') {
+    margin: {
+      left: - map-get($spacings, spacing-m);
+      right: - map-get($spacings, spacing-m);
+    }
   }
 
   @include breakpoint('l') {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-  }
-
-  &--small {
-    margin-left: -0.1875rem;
-    margin-right: -0.1875rem;
+    margin: {
+      left: - map-get($spacings, spacing-l);
+      right: - map-get($spacings, spacing-l);
+    }
   }
 
   &--zero {

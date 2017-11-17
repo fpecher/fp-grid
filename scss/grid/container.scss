@@ -13,4 +13,11 @@
   max-width: map-get($container, max-width);
   margin: 0 auto;
   position: relative;
+
+  &--fullwidth {
+    padding: {
+      left: 0;
+      right: 0;
+    }
+  }
 }

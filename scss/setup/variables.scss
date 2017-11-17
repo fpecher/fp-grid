@@ -13,3 +13,11 @@ $container: (
   'padding-horizontal': 7%,
   'max-width': 86rem
 );
+
+// Here you can customize the spacings for the rows and columns
+$spacings:(
+  'spacing-xs': .25rem,
+  'spacing-s': .5rem,
+  'spacing-m': .75rem,
+  'spacing-l': .95rem
+);
