@@ -7,7 +7,8 @@ var gulp  = require('gulp'),
 gulp.task('styles', function() {
   return gulp.src('scss/*.scss')
       	.pipe(sass({ style: 'compact' }))
-      	.pipe(autoprefixer('last 2 version', 'safari 10', 'ie 11', 'opera 12.1', 'ios 6', 'android 4'));
+      	.pipe(autoprefixer('last 2 version', 'safari 10', 'ie 11', 'opera 12.1', 'ios 6', 'android 4'))
+        .pipe(gulp.dest('css/'));
 });
 
 gulp.task('build', function () {

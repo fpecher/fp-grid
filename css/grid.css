@@ -1,3 +1,15 @@
+.container {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 86rem;
+  margin: 0 auto;
+  position: relative; }
+  .container--fullwidth {
+    padding-left: 0;
+    padding-right: 0; }
+
 .row {
   margin-left: -0.25rem;
   margin-right: -0.25rem; }
@@ -40,6 +52,12 @@
       .row--zero-l-only {
         margin-left: 0;
         margin-right: 0; } }
+  .row--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
 .column {
   min-height: 1px;
@@ -214,15 +232,3 @@
       .column--zero-l-only {
         padding-left: 0;
         padding-right: 0; } }
-
-.container {
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 0;
-  padding-bottom: 0;
-  max-width: 86rem;
-  margin: 0 auto;
-  position: relative; }
-  .container--fullwidth {
-    padding-left: 0;
-    padding-right: 0; }
