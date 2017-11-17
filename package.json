@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/fpecher/fp-grid/issues"
   },
-  "homepage": "https://github.com/fpecher/fp-grid#readme",
+  "homepage": "http://fpecher.de",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "4.0.0",
