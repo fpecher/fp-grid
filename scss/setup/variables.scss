@@ -1,7 +1,15 @@
+// Here you can can customize the breakpoints to your need
 $breakpoints: (
-  xxs: 0,
-  s: 320,
-  m: 768,
-  l: 992,
-  xl: 1200
+  'xxs': 0px,
+  'xs': 480px,
+  's': 768px,
+  'm': 992px,
+  'l': 1200px
+);
+
+// Here you can customize the inner spacings and the max-width of your container
+$container: (
+  'padding-vertical': 0,
+  'padding-horizontal': 7%,
+  'max-width': 86rem
 );

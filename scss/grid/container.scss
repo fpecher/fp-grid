@@ -1,0 +1,16 @@
+@import '../setup/_breakpoint';
+@import '../setup/variables';
+
+
+.container {
+  padding: {
+    left: map-get($container, padding-horizontal);
+    right: map-get($container, padding-horizontal);
+    top: map-get($container, padding-vertical);
+    bottom: map-get($container, padding-vertical);
+  };
+
+  max-width: map-get($container, max-width);
+  margin: 0 auto;
+  position: relative;
+}
