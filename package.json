@@ -1,0 +1,22 @@
+{
+  "name": "fp-grid",
+  "version": "1.0.0",
+  "description": "my grid system",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpecher/fp-grid.git"
+  },
+  "keywords": [
+    "grid"
+  ],
+  "author": "Fabian Pecher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpecher/fp-grid/issues"
+  },
+  "homepage": "https://github.com/fpecher/fp-grid#readme"
+}
