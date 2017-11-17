@@ -1,9 +1,0 @@
-scss_files: 'scss/*.scss'
-
-linters:
-  StringQuotes:
-    enabled: true
-UrlQuotes:
-    enabled: true
-FinalNewline:
-    present: true
